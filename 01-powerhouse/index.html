@@ -21,7 +21,7 @@
     "addressRegion": "Maharashtra",
     "addressCountry": "IN"
   },
-  "url": "https://invictus-ai.in",
+  "url": "https://invictus-gym-demos.vercel.app/01-powerhouse/",
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.6",
@@ -194,6 +194,13 @@
     .hero h1 { font-size: 2.5rem; }
     .proof-row { flex-wrap: wrap; gap: 1.5rem; }
   }
+
+  @media(max-width:768px){
+    #mob-links-01powerhouse { display:none!important; }
+    #mob-links-01powerhouse.show { display:flex!important; flex-direction:column; position:absolute; top:70px; left:0; right:0; background:white; padding:1rem; box-shadow:0 4px 12px rgba(0,0,0,0.1); z-index:50; }
+    #mob-links-01powerhouse.show a { margin:0!important; padding:8px 0; border-bottom:1px solid #eee; color:#333!important; }
+    #mob-btn-01powerhouse { display:block!important; }
+  }
 </style>
 
 <link rel="canonical" href="https://invictus-ai.in/gym/ironedge">
@@ -202,7 +209,7 @@
 
 <nav>
   <div class="logo">IRON<span>EDGE</span></div>
-  <div class="nav-links">
+  <button id="mob-btn-01powerhouse" style="display:none;padding:8px;cursor:pointer;background:none;border:none;" onclick="document.getElementById('mob-links-01powerhouse').classList.toggle('show')" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="nav-links" id="mob-links-01powerhouse">
     <a href="#programs">Programs</a>
     <a href="#trainers">Trainers</a>
     <a href="#plans">Pricing</a>

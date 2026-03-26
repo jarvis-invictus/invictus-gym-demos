@@ -22,7 +22,7 @@
     "addressRegion": "Maharashtra",
     "addressCountry": "IN"
   },
-  "url": "https://invictus-ai.in",
+  "url": "https://invictus-gym-demos.vercel.app/03-boutique-studio/",
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.8",
@@ -175,13 +175,20 @@
   .footer-links a{color:#a0aec0;text-decoration:none;font-size:0.9rem;}
   .footer-copy{font-size:0.8rem;}
   @media(max-width:768px){.hero-inner{grid-template-columns:1fr;}.stats-grid{grid-template-columns:repeat(2,1fr);}.contact-wrapper{grid-template-columns:1fr;}.nav-links{display:none;}}
+
+  @media(max-width:768px){
+    #mob-links-03boutiquestudio { display:none!important; }
+    #mob-links-03boutiquestudio.show { display:flex!important; flex-direction:column; position:absolute; top:70px; left:0; right:0; background:white; padding:1rem; box-shadow:0 4px 12px rgba(0,0,0,0.1); z-index:50; }
+    #mob-links-03boutiquestudio.show a { margin:0!important; padding:8px 0; border-bottom:1px solid #eee; color:#333!important; }
+    #mob-btn-03boutiquestudio { display:block!important; }
+  }
 </style>
 
 </head>
 <body>
 <nav>
   <div class="logo">Zen<span>Strength</span></div>
-  <ul class="nav-links">
+  <button id="mob-btn-03boutiquestudio" style="display:none;padding:8px;cursor:pointer;background:none;border:none;" onclick="document.getElementById('mob-links-03boutiquestudio').classList.toggle('show')" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><ul class="nav-links" id="mob-links-03boutiquestudio">
     <li><a href="#classes">Classes</a></li>
     <li><a href="#schedule">Schedule</a></li>
     <li><a href="#pricing">Pricing</a></li>
@@ -356,7 +363,7 @@
       </div>
       <div class="contact-form">
         <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your name"></div>
-        <div class="form-group"><label>Phone</label><input type="tel" placeholder="+91 XXXXX XXXXX"></div>
+        <div class="form-group"><label>Phone</label><input type="tel" placeholder="+91 98765 43210"></div>
         <div class="form-group"><label>Preferred Class</label>
           <select><option>Hatha Yoga</option><option>Power Vinyasa</option><option>Functional HIIT</option><option>Mobility & Strength</option><option>Aerial Yoga</option><option>Sunrise Meditation</option></select>
         </div>
