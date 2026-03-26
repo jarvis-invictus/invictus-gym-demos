@@ -3,269 +3,410 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GritBox Training | CrossFit & Functional Fitness | Wakad, Pune</title>
-<meta name="description" content="GritBox Training — CrossFit and functional fitness in Wakad, Pune. High-intensity workouts, Olympic lifting, community-driven training.">
-<meta property="og:title" content="GritBox Training — Wakad, Pune">
-<meta property="og:description" content="CrossFit and functional fitness. High-intensity community training.">
+<title>FitFamily Gym | Women & Family Fitness | Aundh, Pune</title>
+<meta name="description" content="FitFamily Gym — Women & Family Fitness in Aundh, Pune. Safe, welcoming gym for women and families. Zumba, yoga, strength classes. Join today.">
+<meta name="keywords" content="ladies gym pune, family gym aundh pune, women fitness centre pune, zumba pune, yoga gym pune">
+<meta property="og:title" content="FitFamily Gym | Women & Family Fitness | Aundh, Pune">
+<meta property="og:description" content="FitFamily Gym — Women & Family Fitness in Aundh, Pune. Safe, welcoming gym for women and families. Zumba, yoga, strength classes. Join today.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://invictus-gym-demos.vercel.app/05-wellness-center/">
-<link rel="canonical" href="https://invictus-gym-demos.vercel.app/05-wellness-center/">
+<meta property="og:image" content="https://invictus-ai.in/assets/fitfamily-og.jpg">
+<link rel="canonical" href="https://invictus-ai.in/gym/fitfamily">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ExerciseGym",
+  "name": "FitFamily Gym",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pune",
+    "addressRegion": "Maharashtra",
+    "addressCountry": "IN"
+  },
+  "url": "https://invictus-ai.in",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "reviewCount": "223"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "18.5580",
+    "longitude": "73.8078"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What makes FitFamily Gym special for women in Aundh, Pune?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FitFamily offers dedicated women-only training hours, female trainers, a safe and supportive environment, and programs designed for women's fitness goals including weight management, strength training, Zumba, and post-pregnancy recovery."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does FitFamily Gym have programs for kids in Pune?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, FitFamily offers kids fitness classes for ages 6-14 including fun functional workouts, flexibility training, sports conditioning, and confidence-building activities in a safe, supervised environment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the membership fees at FitFamily Gym Aundh?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FitFamily offers affordable memberships starting at ₹1,500/month for general access, family packages from ₹4,000/month, and premium packages with personal training up to ₹6,000/month."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does FitFamily offer Zumba classes in Pune?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, FitFamily offers daily Zumba and dance fitness classes in the morning and evening batches. Classes are high-energy, fun, and suitable for all fitness levels. No dance experience needed!"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is FitFamily Gym located in Pune?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FitFamily Gym is on ITI Road, near Parihar Chowk, Aundh, Pune 411007. We have a spacious, well-ventilated facility with separate changing rooms, a kids area, and ample parking."
+      }
+    }
+  ]
+}
+</script>
 <style>
   *{margin:0;padding:0;box-sizing:border-box;}
-  :root{--bg:#0d0d0d;--card:#1a1a1a;--accent:#ff4500;--accent2:#ff8c00;--text:#f5f5f5;--muted:#999;--green:#00c853;}
+  :root{--bg:#fff9f5;--card:#fff;--accent:#e05c8a;--accent2:#f59e0b;--dark:#2d1f2d;--text:#3d3d3d;--muted:#8a8a8a;--light:#fce7f3;}
   body{font-family:'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
-  nav{position:fixed;top:0;width:100%;background:rgba(13,13,13,0.97);z-index:100;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid var(--accent);}
-  .logo{font-size:1.5rem;font-weight:900;color:var(--accent);letter-spacing:2px;text-transform:uppercase;}
+  nav{position:fixed;top:0;width:100%;background:rgba(255,249,245,0.97);backdrop-filter:blur(8px);z-index:100;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;box-shadow:0 1px 12px rgba(0,0,0,0.06);}
+  .logo{font-size:1.5rem;font-weight:800;color:var(--accent);}
+  .logo span{color:var(--dark);}
   .nav-links{display:flex;gap:2rem;list-style:none;}
-  .nav-links a{color:var(--muted);text-decoration:none;font-size:0.9rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;transition:color 0.2s;}
+  .nav-links a{color:var(--muted);text-decoration:none;font-size:0.9rem;transition:color 0.2s;}
   .nav-links a:hover{color:var(--accent);}
-  .nav-cta{background:var(--accent);color:#fff;padding:0.5rem 1.2rem;border-radius:4px;text-decoration:none;font-weight:900;font-size:0.9rem;text-transform:uppercase;letter-spacing:1px;}
+  .nav-cta{background:var(--accent);color:#fff;padding:0.5rem 1.2rem;border-radius:25px;text-decoration:none;font-weight:700;font-size:0.9rem;}
   /* HERO */
-  .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:6rem 2rem 4rem;position:relative;overflow:hidden;background:#0d0d0d;}
-  .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 50%,rgba(255,69,0,0.15),transparent 70%);}
-  .hero-badge{display:inline-block;background:var(--accent);color:#fff;padding:0.4rem 1.2rem;border-radius:3px;font-size:0.75rem;font-weight:900;letter-spacing:2px;text-transform:uppercase;margin-bottom:1.5rem;}
-  .hero h1{font-size:clamp(3rem,8vw,7rem);font-weight:900;line-height:1;text-transform:uppercase;letter-spacing:-1px;margin-bottom:1.5rem;}
-  .hero h1 .fire{color:var(--accent);text-shadow:0 0 40px rgba(255,69,0,0.5);}
-  .hero p{font-size:1.2rem;color:var(--muted);max-width:550px;margin:0 auto 3rem;}
-  .hero-btns{display:flex;gap:1rem;justify-content:center;}
-  .btn-fire{background:var(--accent);color:#fff;padding:1rem 2.5rem;border-radius:4px;text-decoration:none;font-weight:900;font-size:1rem;text-transform:uppercase;letter-spacing:1px;}
-  .btn-ghost{background:transparent;border:2px solid var(--muted);color:var(--muted);padding:1rem 2.5rem;border-radius:4px;text-decoration:none;font-weight:700;font-size:1rem;text-transform:uppercase;letter-spacing:1px;}
-  .btn-ghost:hover{border-color:var(--accent);color:var(--accent);}
+  .hero{min-height:100vh;display:flex;align-items:center;padding:6rem 2rem 4rem;background:linear-gradient(135deg,#fff9f5 0%,#fce7f3 100%);}
+  .hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
+  .hero-badge{display:inline-flex;align-items:center;gap:0.5rem;background:var(--light);color:var(--accent);padding:0.5rem 1rem;border-radius:25px;font-size:0.85rem;font-weight:700;margin-bottom:1.5rem;}
+  .hero h1{font-size:clamp(2.5rem,5vw,4rem);font-weight:900;line-height:1.1;margin-bottom:1.5rem;color:var(--dark);}
+  .hero h1 .accent{color:var(--accent);}
+  .hero p{font-size:1.1rem;color:var(--muted);margin-bottom:2.5rem;max-width:480px;}
+  .hero-btns{display:flex;gap:1rem;flex-wrap:wrap;}
+  .btn-pink{background:var(--accent);color:#fff;padding:0.9rem 2rem;border-radius:25px;text-decoration:none;font-weight:700;}
+  .btn-outline{border:2px solid var(--accent);color:var(--accent);padding:0.9rem 2rem;border-radius:25px;text-decoration:none;font-weight:700;}
+  .hero-card{background:var(--card);border-radius:20px;padding:2.5rem;box-shadow:0 8px 40px rgba(224,92,138,0.15);text-align:center;}
+  .hero-card .emoji-row{font-size:3rem;margin-bottom:1rem;display:flex;gap:0.5rem;justify-content:center;}
+  .hero-card h3{font-size:1.3rem;font-weight:800;color:var(--dark);margin-bottom:0.5rem;}
+  .hero-card p{color:var(--muted);font-size:0.9rem;margin-bottom:1.5rem;}
+  .feature-pills{display:flex;flex-wrap:wrap;gap:0.5rem;justify-content:center;}
+  .pill{background:var(--light);color:var(--accent);padding:0.3rem 0.9rem;border-radius:20px;font-size:0.8rem;font-weight:600;}
   /* STATS */
   .stats{padding:3rem 2rem;background:var(--accent);color:#fff;}
   .stats-grid{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center;}
-  .stat-num{font-size:2.5rem;font-weight:900;text-transform:uppercase;}
-  .stat-label{font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;opacity:0.8;}
+  .stat-num{font-size:2.5rem;font-weight:900;}
+  .stat-label{font-size:0.85rem;opacity:0.85;}
   /* SECTIONS */
   section{padding:5rem 2rem;}
   .container{max-width:1100px;margin:0 auto;}
-  .section-tag{color:var(--accent);font-size:0.75rem;font-weight:900;text-transform:uppercase;letter-spacing:3px;margin-bottom:0.8rem;}
-  .section-title{font-size:2.5rem;font-weight:900;text-transform:uppercase;margin-bottom:1rem;}
-  .section-sub{color:var(--muted);font-size:1rem;max-width:600px;}
-  /* WORKOUTS */
-  .workouts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1px;margin-top:3rem;background:rgba(255,255,255,0.05);}
-  .workout-item{background:var(--card);padding:2rem;border-bottom:3px solid transparent;transition:border-color 0.3s;}
-  .workout-item:hover{border-color:var(--accent);}
-  .workout-num{font-size:0.75rem;font-weight:900;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:0.5rem;}
-  .workout-name{font-size:1.3rem;font-weight:900;text-transform:uppercase;margin-bottom:0.5rem;}
-  .workout-desc{color:var(--muted);font-size:0.9rem;}
+  .section-tag{color:var(--accent);font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;margin-bottom:0.8rem;}
+  .section-title{font-size:2.2rem;font-weight:800;margin-bottom:1rem;color:var(--dark);}
+  .section-sub{color:var(--muted);font-size:1.1rem;max-width:600px;}
+  /* PROGRAMS */
+  .programs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;margin-top:3rem;}
+  .program-card{background:var(--card);border-radius:16px;padding:2rem;box-shadow:0 2px 12px rgba(0,0,0,0.06);transition:transform 0.3s,box-shadow 0.3s;border-top:4px solid transparent;}
+  .program-card:hover{transform:translateY(-4px);box-shadow:0 8px 30px rgba(224,92,138,0.15);border-top-color:var(--accent);}
+  .prog-icon{font-size:2.5rem;margin-bottom:1rem;}
+  .prog-name{font-size:1.1rem;font-weight:800;color:var(--dark);margin-bottom:0.5rem;}
+  .prog-desc{color:var(--muted);font-size:0.9rem;margin-bottom:1rem;}
+  .prog-for{background:var(--light);color:var(--accent);padding:0.3rem 0.8rem;border-radius:20px;font-size:0.8rem;font-weight:600;display:inline-block;}
+  /* WHY US */
+  .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;margin-top:3rem;}
+  .why-item{text-align:center;padding:2rem;}
+  .why-icon{font-size:3rem;margin-bottom:1rem;}
+  .why-title{font-size:1.1rem;font-weight:800;color:var(--dark);margin-bottom:0.5rem;}
+  .why-desc{color:var(--muted);font-size:0.9rem;}
   /* PRICING */
-  .pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:3rem;}
-  .price-card{background:var(--card);border:1px solid rgba(255,255,255,0.05);border-radius:6px;padding:2rem;position:relative;}
-  .price-card.featured{border-color:var(--accent);background:rgba(255,69,0,0.05);}
-  .price-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;padding:0.3rem 1rem;border-radius:3px;font-size:0.7rem;font-weight:900;text-transform:uppercase;letter-spacing:1px;white-space:nowrap;}
-  .price-plan{font-size:0.8rem;font-weight:900;color:var(--muted);text-transform:uppercase;letter-spacing:2px;margin-bottom:0.8rem;}
-  .price-amount{font-size:3rem;font-weight:900;margin-bottom:0.3rem;}
-  .price-amount span{font-size:1rem;font-weight:400;color:var(--muted);}
+  .pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin-top:3rem;}
+  .price-card{background:var(--card);border-radius:16px;padding:2rem;box-shadow:0 2px 12px rgba(0,0,0,0.06);position:relative;}
+  .price-card.featured{background:linear-gradient(135deg,var(--accent),#d04070);color:#fff;}
+  .price-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--accent2);color:#fff;padding:0.3rem 1rem;border-radius:20px;font-size:0.75rem;font-weight:700;white-space:nowrap;}
+  .price-plan{font-weight:700;color:var(--muted);margin-bottom:0.5rem;font-size:0.9rem;}
+  .featured .price-plan{color:rgba(255,255,255,0.7);}
+  .price-amount{font-size:2.8rem;font-weight:900;color:var(--dark);margin-bottom:0.3rem;}
+  .featured .price-amount{color:#fff;}
+  .price-amount span{font-size:1rem;font-weight:400;}
   .price-features{list-style:none;margin:1.5rem 0;display:flex;flex-direction:column;gap:0.6rem;}
-  .price-features li{color:var(--muted);font-size:0.9rem;padding-left:1.5rem;position:relative;}
-  .price-features li::before{content:'▶';position:absolute;left:0;color:var(--accent);font-size:0.6rem;top:4px;}
-  .price-cta{display:block;text-align:center;padding:0.9rem;border-radius:4px;font-weight:900;text-decoration:none;text-transform:uppercase;letter-spacing:1px;font-size:0.85rem;border:2px solid var(--accent);color:var(--accent);transition:all 0.2s;}
-  .featured .price-cta{background:var(--accent);color:#fff;}
+  .price-features li{font-size:0.9rem;color:var(--muted);padding-left:1.5rem;position:relative;}
+  .featured .price-features li{color:rgba(255,255,255,0.85);}
+  .price-features li::before{content:'♥';position:absolute;left:0;color:var(--accent);font-size:0.7rem;top:4px;}
+  .featured .price-features li::before{color:rgba(255,255,255,0.7);}
+  .price-cta{display:block;text-align:center;padding:0.9rem;border-radius:25px;font-weight:700;text-decoration:none;border:2px solid var(--accent);color:var(--accent);transition:all 0.2s;}
   .price-cta:hover{background:var(--accent);color:#fff;}
-  /* TESTIMONIALS */
-  .testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:3rem;}
-  .testi-card{background:var(--card);border-left:4px solid var(--accent);padding:1.5rem;}
-  .testi-text{color:var(--muted);font-size:0.95rem;line-height:1.7;margin-bottom:1rem;font-style:italic;}
-  .testi-author{font-weight:900;text-transform:uppercase;font-size:0.85rem;color:var(--accent);}
-  .testi-tag{color:var(--muted);font-size:0.8rem;}
+  .featured .price-cta{border-color:#fff;color:var(--accent);background:#fff;}
   /* CONTACT */
   .contact-wrapper{display:grid;grid-template-columns:1fr 1fr;gap:4rem;margin-top:3rem;}
   .contact-info{display:flex;flex-direction:column;gap:1.5rem;}
   .contact-item{display:flex;gap:1rem;align-items:flex-start;}
-  .contact-icon{width:44px;height:44px;background:rgba(255,69,0,0.1);border:1px solid rgba(255,69,0,0.3);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;}
-  .contact-label{color:var(--accent);font-size:0.7rem;text-transform:uppercase;letter-spacing:2px;font-weight:700;}
-  .contact-value{font-weight:600;margin-top:0.2rem;}
-  .contact-form{background:var(--card);border:1px solid rgba(255,255,255,0.08);border-radius:6px;padding:2rem;}
+  .contact-icon{width:44px;height:44px;background:var(--light);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;}
+  .contact-label{color:var(--muted);font-size:0.8rem;text-transform:uppercase;letter-spacing:1px;}
+  .contact-value{font-weight:600;color:var(--dark);}
+  .contact-form{background:var(--card);border-radius:16px;padding:2rem;box-shadow:0 4px 20px rgba(224,92,138,0.1);}
   .form-group{margin-bottom:1.2rem;}
-  .form-group label{display:block;color:var(--muted);font-size:0.8rem;text-transform:uppercase;letter-spacing:1px;margin-bottom:0.4rem;}
-  .form-group input,.form-group select{width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:4px;padding:0.7rem 1rem;color:var(--text);font-size:0.95rem;}
+  .form-group label{display:block;color:var(--muted);font-size:0.85rem;margin-bottom:0.4rem;}
+  .form-group input,.form-group select{width:100%;background:var(--bg);border:1px solid #f0d0e0;border-radius:8px;padding:0.7rem 1rem;color:var(--text);font-size:0.95rem;}
   .form-group input:focus,.form-group select:focus{outline:none;border-color:var(--accent);}
-  .form-submit{width:100%;background:var(--accent);color:#fff;border:none;padding:1rem;border-radius:4px;font-weight:900;font-size:1rem;text-transform:uppercase;letter-spacing:1px;cursor:pointer;}
-  footer{background:#050505;border-top:2px solid var(--accent);padding:3rem 2rem;text-align:center;}
-  .footer-logo{font-size:2rem;font-weight:900;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:1rem;}
+  .form-submit{width:100%;background:var(--accent);color:#fff;border:none;padding:0.9rem;border-radius:25px;font-weight:700;font-size:1rem;cursor:pointer;}
+  footer{background:var(--dark);color:#c0a0b0;padding:3rem 2rem;text-align:center;}
+  .footer-logo{font-size:1.8rem;font-weight:900;color:var(--accent);margin-bottom:1rem;}
   .footer-links{display:flex;gap:2rem;justify-content:center;margin-bottom:1.5rem;flex-wrap:wrap;}
-  .footer-links a{color:var(--muted);text-decoration:none;font-size:0.85rem;text-transform:uppercase;letter-spacing:1px;}
-  .footer-copy{color:var(--muted);font-size:0.8rem;}
-  @media(max-width:768px){.stats-grid{grid-template-columns:repeat(2,1fr);}.contact-wrapper{grid-template-columns:1fr;}.nav-links{display:none;}}
+  .footer-links a{color:#c0a0b0;text-decoration:none;font-size:0.9rem;}
+  .footer-copy{font-size:0.8rem;}
+  @media(max-width:768px){.hero-inner{grid-template-columns:1fr;}.stats-grid{grid-template-columns:repeat(2,1fr);}.contact-wrapper{grid-template-columns:1fr;}.nav-links{display:none;}}
 </style>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ExerciseGym","name":"GritBox Training","address":{"@type":"PostalAddress","addressLocality":"Wakad, Pune","addressRegion":"Maharashtra","addressCountry":"IN"},"telephone":"+912012345678","openingHours":"Mo-Su 05:30-22:00"}
-</script>
+
 </head>
 <body>
 <nav>
-  <div class="logo">GritBox</div>
+  <div class="logo">Fit<span>Family</span></div>
   <ul class="nav-links">
-    <li><a href="#workouts">Training</a></li>
+    <li><a href="#programs">Programs</a></li>
     <li><a href="#pricing">Plans</a></li>
-    <li><a href="#contact">Join</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="#contact" class="nav-cta">Free Drop-In</a>
+  <a href="#contact" class="nav-cta">Free Week Pass</a>
 </nav>
 
 <section class="hero">
-  <div>
-    <div class="hero-badge">🔥 Wakad's Most Intense Gym</div>
-    <h1>No Excuses.<br><span class="fire">Pure Grit.</span></h1>
-    <p>CrossFit-inspired WODs, barbell strength, and conditioning that separates the committed from the casual. Are you in?</p>
-    <div class="hero-btns">
-      <a href="#contact" class="btn-fire">Start Free Drop-In</a>
-      <a href="#workouts" class="btn-ghost">See Training</a>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge">💕 Pune's Most Welcoming Gym</div>
+      <h1>Fitness for <span class="accent">Every Body</span> in Your Family</h1>
+      <p>A safe, judgement-free space for women, kids, seniors, and couples. Real support. Real results. Real community.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-pink">Get Free Week Pass</a>
+        <a href="#programs" class="btn-outline">Our Programs</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="emoji-row">💪 🧒 👵 👫</div>
+      <h3>Everyone Belongs Here</h3>
+      <p>From 6-year-olds to 60-year-olds — we've got programs for every stage of life.</p>
+      <div class="feature-pills">
+        <span class="pill">Women-first batches</span>
+        <span class="pill">Kids classes</span>
+        <span class="pill">Senior fitness</span>
+        <span class="pill">Couple memberships</span>
+        <span class="pill">Prenatal yoga</span>
+        <span class="pill">PCOS-friendly training</span>
+      </div>
     </div>
   </div>
 </section>
 
 <div class="stats">
   <div class="stats-grid">
-    <div><div class="stat-num">3,200+</div><div class="stat-label">Athletes Trained</div></div>
-    <div><div class="stat-num">15</div><div class="stat-label">WODs / Week</div></div>
-    <div><div class="stat-num">6</div><div class="stat-label">Expert Coaches</div></div>
-    <div><div class="stat-num">24/7</div><div class="stat-label">Access Available</div></div>
+    <div><div class="stat-num">2,100+</div><div class="stat-label">Happy Members</div></div>
+    <div><div class="stat-num">68%</div><div class="stat-label">Women Members</div></div>
+    <div><div class="stat-num">10</div><div class="stat-label">Trainers</div></div>
+    <div><div class="stat-num">4.9★</div><div class="stat-label">Google Rating</div></div>
   </div>
 </div>
 
-<section id="workouts" style="background:var(--card);">
+<section id="programs">
   <div class="container">
-    <div class="section-tag">Training Methods</div>
-    <div class="section-title">How We Build <span style="color:var(--accent);">Animals</span></div>
-    <div class="section-sub">Every session is programmed, coached, and scaled — beginner to elite. No aimless wandering.</div>
-    <div class="workouts-grid">
-      <div class="workout-item">
-        <div class="workout-num">01</div>
-        <div class="workout-name">WOD (Workout of the Day)</div>
-        <div class="workout-desc">Daily programmed CrossFit-style workouts. Constantly varied functional movements executed at high intensity.</div>
+    <div class="section-tag">Programs</div>
+    <div class="section-title">Something for <span style="color:var(--accent);">Everyone</span></div>
+    <div class="section-sub">Each program is designed by certified trainers with a specific audience in mind — no one-size-fits-all here.</div>
+    <div class="programs-grid">
+      <div class="program-card">
+        <div class="prog-icon">👩</div>
+        <div class="prog-name">Women's Fitness</div>
+        <div class="prog-desc">Strength, cardio, and body composition programs designed for women's hormonal biology. Batches are women-only.</div>
+        <div class="prog-for">For: Women of all ages</div>
       </div>
-      <div class="workout-item">
-        <div class="workout-num">02</div>
-        <div class="workout-name">Olympic Lifting</div>
-        <div class="workout-desc">Snatch, clean & jerk, and accessory work. Technique-first coaching with heavy work for advanced athletes.</div>
+      <div class="program-card">
+        <div class="prog-icon">🏃‍♀️</div>
+        <div class="prog-name">PCOS & Hormonal Health</div>
+        <div class="prog-desc">Certified PCOS-aware training: low-stress workouts, nutritional guidance, and cortisol management protocols.</div>
+        <div class="prog-for">For: Women with PCOS / thyroid issues</div>
       </div>
-      <div class="workout-item">
-        <div class="workout-num">03</div>
-        <div class="workout-name">Strength Bias</div>
-        <div class="workout-desc">Conjugate-inspired 5-day program: squat, press, deadlift, accessory. Built for raw strength gains.</div>
+      <div class="program-card">
+        <div class="prog-icon">🤰</div>
+        <div class="prog-name">Pre & Postnatal</div>
+        <div class="prog-desc">Safe movement through pregnancy and recovery post-delivery. Certified pre/postnatal coaches on staff.</div>
+        <div class="prog-for">For: Expecting & new mothers</div>
       </div>
-      <div class="workout-item">
-        <div class="workout-num">04</div>
-        <div class="workout-name">Metabolic Conditioning</div>
-        <div class="workout-desc">EMOM, AMRAP, Tabata. Structured intervals that maximize VO2 max, lactate threshold, and work capacity.</div>
+      <div class="program-card">
+        <div class="prog-icon">🧒</div>
+        <div class="prog-name">Kids Fitness (6–14)</div>
+        <div class="prog-desc">Sports conditioning, movement skills, and fun fitness challenges for children. Builds lifelong habits early.</div>
+        <div class="prog-for">For: Kids aged 6–14</div>
       </div>
-      <div class="workout-item">
-        <div class="workout-num">05</div>
-        <div class="workout-name">Foundations Course</div>
-        <div class="workout-desc">3-session onboarding for all new members. Learn movement patterns, meet coaches, scale intelligently from day 1.</div>
+      <div class="program-card">
+        <div class="prog-icon">👴</div>
+        <div class="prog-name">Senior Strength</div>
+        <div class="prog-desc">Low-impact resistance training for bone density, balance, and independence. Gentle pace, major results.</div>
+        <div class="prog-for">For: Adults 50+</div>
       </div>
-      <div class="workout-item">
-        <div class="workout-num">06</div>
-        <div class="workout-name">Open Gym + Skill Work</div>
-        <div class="workout-desc">Self-directed training for handstands, double-unders, kipping, muscle-ups, and mobility work between WODs.</div>
+      <div class="program-card">
+        <div class="prog-icon">👫</div>
+        <div class="prog-name">Couples Training</div>
+        <div class="prog-desc">Train together with a shared program, couple challenges, and joint PT sessions. Accountability built in.</div>
+        <div class="prog-for">For: Couples</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--light);">
+  <div class="container">
+    <div class="section-tag">Why FitFamily</div>
+    <div class="section-title">We're Different <span style="color:var(--accent);">On Purpose</span></div>
+    <div class="why-grid">
+      <div class="why-item"><div class="why-icon">🚫</div><div class="why-title">Zero Judgement</div><div class="why-desc">No staring, no intimidation, no toxic energy. We enforce a strict respect-first culture.</div></div>
+      <div class="why-item"><div class="why-icon">👩‍🏫</div><div class="why-title">Female Trainers Available</div><div class="why-desc">All women's batches are led by certified female coaches — always.</div></div>
+      <div class="why-item"><div class="why-icon">🔒</div><div class="why-title">Women-Only Hours</div><div class="why-desc">6–9 AM and 10 AM–12 PM are women-only floor time, every weekday.</div></div>
+      <div class="why-item"><div class="why-icon">🍎</div><div class="why-title">Nutrition Included</div><div class="why-desc">Every membership includes a monthly nutrition consultation. No extra charge.</div></div>
     </div>
   </div>
 </section>
 
 <section id="pricing">
   <div class="container">
-    <div class="section-tag">Plans</div>
-    <div class="section-title">Pick Your <span style="color:var(--accent);">Level</span></div>
+    <div class="section-tag">Pricing</div>
+    <div class="section-title">Affordable for <span style="color:var(--accent);">Every Family</span></div>
     <div class="pricing-grid">
       <div class="price-card">
-        <div class="price-plan">Starter</div>
-        <div class="price-amount">₹1,799<span>/mo</span></div>
+        <div class="price-plan">Individual</div>
+        <div class="price-amount">₹1,299<span>/mo</span></div>
         <ul class="price-features">
-          <li>10 WOD classes/month</li>
-          <li>Foundations course included</li>
-          <li>Locker access</li>
-          <li>Community WhatsApp</li>
+          <li>Full gym access</li>
+          <li>Group classes included</li>
+          <li>Monthly nutrition check-in</li>
+          <li>Progress tracking app</li>
         </ul>
-        <a href="#contact" class="price-cta">Start Here</a>
+        <a href="#contact" class="price-cta">Start Now</a>
       </div>
       <div class="price-card featured">
-        <div class="price-badge">Most Popular</div>
-        <div class="price-plan">Unlimited</div>
-        <div class="price-amount">₹3,299<span>/mo</span></div>
+        <div class="price-badge">Best Deal</div>
+        <div class="price-plan">Family (up to 4)</div>
+        <div class="price-amount">₹3,499<span>/mo</span></div>
         <ul class="price-features">
-          <li>Unlimited WODs + Open Gym</li>
-          <li>Strength & Olympic classes</li>
-          <li>Monthly performance test</li>
-          <li>Programming access (online)</li>
-          <li>1 nutrition consultation</li>
+          <li>4 individual memberships</li>
+          <li>All programs (kids + seniors)</li>
+          <li>Family nutrition workshop/month</li>
+          <li>2 couple PT sessions</li>
+          <li>Priority class booking</li>
         </ul>
-        <a href="#contact" class="price-cta">Go Unlimited</a>
+        <a href="#contact" class="price-cta">Join as Family</a>
       </div>
       <div class="price-card">
-        <div class="price-plan">Team + PT</div>
-        <div class="price-amount">₹5,499<span>/mo</span></div>
+        <div class="price-plan">Women's PT</div>
+        <div class="price-amount">₹4,499<span>/mo</span></div>
         <ul class="price-features">
-          <li>Unlimited access</li>
-          <li>6 PT sessions/month</li>
-          <li>Custom strength program</li>
-          <li>Bi-weekly check-ins</li>
-          <li>Competition prep track</li>
+          <li>8 personal training sessions</li>
+          <li>Female trainer always</li>
+          <li>Custom program + nutrition</li>
+          <li>WhatsApp support</li>
+          <li>Body scan monthly</li>
         </ul>
-        <a href="#contact" class="price-cta">Get Coached</a>
+        <a href="#contact" class="price-cta">Book PT</a>
       </div>
     </div>
   </div>
 </section>
 
-<section id="testimonials" style="background:var(--card);">
+<section id="contact" style="background:var(--light);">
   <div class="container">
-    <div class="section-tag">From the Box</div>
-    <div class="section-title">Real People. <span style="color:var(--accent);">Real Results.</span></div>
-    <div class="testi-grid">
-      <div class="testi-card">
-        <div class="testi-text">"I've tried every gym in Pune. GritBox is the only place where I actually get pushed. 14 kg down, PR on every lift. Never leaving."</div>
-        <div class="testi-author">Amit Kulkarni</div>
-        <div class="testi-tag">14 kg lost · 8 months</div>
-      </div>
-      <div class="testi-card">
-        <div class="testi-text">"The coaches are insane — they actually care about your form and your progress. Not just counting reps. My clean technique improved 10x in 3 months."</div>
-        <div class="testi-author">Shreya Nair</div>
-        <div class="testi-tag">Olympic Lifting · 3 months</div>
-      </div>
-      <div class="testi-card">
-        <div class="testi-text">"Community here is different. You're competing with yourself but cheered on by everyone. I've made actual friends. That's rare in a gym."</div>
-        <div class="testi-author">Kunal Shinde</div>
-        <div class="testi-tag">Unlimited Member · 1 year</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="container">
-    <div class="section-tag">Join the Box</div>
-    <div class="section-title">First Drop-In is <span style="color:var(--accent);">Free</span></div>
+    <div class="section-tag">Join Us</div>
+    <div class="section-title">Your Free Week Starts <span style="color:var(--accent);">Today</span></div>
+    <div class="section-sub">No credit card. No pressure. Just come in and see if we're the right fit — literally.</div>
     <div class="contact-wrapper">
       <div class="contact-info">
-        <div class="contact-item"><div class="contact-icon">📍</div><div><div class="contact-label">Location</div><div class="contact-value">GritBox, Wakad Road, Near Hinjewadi Phase 1, Pune 411057</div></div></div>
-        <div class="contact-item"><div class="contact-icon">⏰</div><div><div class="contact-label">Hours</div><div class="contact-value">Mon–Fri: 5 AM – 10 PM<br>Sat–Sun: 6 AM – 8 PM</div></div></div>
-        <div class="contact-item"><div class="contact-icon">📞</div><div><div class="contact-label">Phone</div><div class="contact-value">+91 99705 34567</div></div></div>
-        <div class="contact-item"><div class="contact-icon">✉️</div><div><div class="contact-label">Email</div><div class="contact-value">coach@gritboxpune.in</div></div></div>
+        <div class="contact-item"><div class="contact-icon">📍</div><div><div class="contact-label">Studio</div><div class="contact-value">FitFamily Gym, Aundh ITI Road, Pune 411007</div></div></div>
+        <div class="contact-item"><div class="contact-icon">⏰</div><div><div class="contact-label">Hours</div><div class="contact-value">Mon–Sat: 5:30 AM – 9:30 PM<br>Sunday: 7 AM – 5 PM</div></div></div>
+        <div class="contact-item"><div class="contact-icon">📞</div><div><div class="contact-label">Phone</div><div class="contact-value">+91 94220 78901</div></div></div>
+        <div class="contact-item"><div class="contact-icon">✉️</div><div><div class="contact-label">Email</div><div class="contact-value">hello@fitfamilypune.in</div></div></div>
       </div>
       <div class="contact-form">
         <div class="form-group"><label>Name</label><input type="text" placeholder="Your name"></div>
         <div class="form-group"><label>Phone</label><input type="tel" placeholder="+91 XXXXX XXXXX"></div>
-        <div class="form-group"><label>Experience Level</label>
-          <select><option>Complete Beginner</option><option>Some Gym Experience</option><option>CrossFit Background</option><option>Competitive Athlete</option></select>
+        <div class="form-group"><label>Who's Joining?</label>
+          <select><option>Just Me</option><option>Me + Spouse</option><option>Family (3–4 members)</option><option>Kids Only</option><option>Senior (50+)</option></select>
         </div>
-        <div class="form-group"><label>Preferred Session Time</label>
-          <select><option>Early Morning (5–7 AM)</option><option>Morning (7–10 AM)</option><option>Evening (5–8 PM)</option><option>Night (8–10 PM)</option></select>
+        <div class="form-group"><label>Interested In</label>
+          <select><option>Women's Fitness</option><option>PCOS Program</option><option>Pre/Postnatal</option><option>Kids Fitness</option><option>Senior Strength</option><option>Couples Training</option><option>General Fitness</option></select>
         </div>
-        <button class="form-submit">Book Free Drop-In ▶</button>
+        <button class="form-submit">Claim Free Week Pass 💕</button>
       </div>
     </div>
   </div>
 </section>
 
-<footer>
-  <div class="footer-logo">GritBox</div>
-  <div class="footer-links">
-    <a href="#workouts">Training</a><a href="#pricing">Plans</a><a href="#contact">Join</a>
+
+<!-- FAQ SECTION -->
+<section style="padding: 60px 5%; max-width: 900px; margin: 0 auto;">
+  <h2 style="text-align:center; font-size: 2rem; font-weight: 800; margin-bottom: 12px; color: #333;">Frequently Asked Questions</h2>
+  <p style="text-align:center; color: #6B7280; margin-bottom: 40px; font-size: 1rem;">Common questions about FitFamily Gym in Aundh, Pune</p>
+  <div style="display:flex; flex-direction:column; gap: 8px;">
+    <details style="background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden;">
+      <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #1f2937;">
+        What makes FitFamily Gym special for women in Aundh, Pune?
+        <span style="font-size: 1.2rem; color: #e05c8a; margin-left: 12px; flex-shrink:0;">+</span>
+      </summary>
+      <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #4b5563; line-height: 1.7;">FitFamily offers dedicated women-only training hours, female trainers, a safe and supportive environment, and programs designed for women's fitness goals including weight management, strength training, Zumba, and post-pregnancy recovery.</div>
+    </details>
+    <details style="background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden;">
+      <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #1f2937;">
+        Does FitFamily Gym have programs for kids in Pune?
+        <span style="font-size: 1.2rem; color: #e05c8a; margin-left: 12px; flex-shrink:0;">+</span>
+      </summary>
+      <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #4b5563; line-height: 1.7;">Yes, FitFamily offers kids fitness classes for ages 6-14 including fun functional workouts, flexibility training, sports conditioning, and confidence-building activities in a safe, supervised environment.</div>
+    </details>
+    <details style="background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden;">
+      <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #1f2937;">
+        What are the membership fees at FitFamily Gym Aundh?
+        <span style="font-size: 1.2rem; color: #e05c8a; margin-left: 12px; flex-shrink:0;">+</span>
+      </summary>
+      <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #4b5563; line-height: 1.7;">FitFamily offers affordable memberships starting at ₹1,500/month for general access, family packages from ₹4,000/month, and premium packages with personal training up to ₹6,000/month.</div>
+    </details>
+    <details style="background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden;">
+      <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #1f2937;">
+        Does FitFamily offer Zumba classes in Pune?
+        <span style="font-size: 1.2rem; color: #e05c8a; margin-left: 12px; flex-shrink:0;">+</span>
+      </summary>
+      <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #4b5563; line-height: 1.7;">Yes, FitFamily offers daily Zumba and dance fitness classes in the morning and evening batches. Classes are high-energy, fun, and suitable for all fitness levels. No dance experience needed!</div>
+    </details>
+    <details style="background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden;">
+      <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #1f2937;">
+        Where is FitFamily Gym located in Pune?
+        <span style="font-size: 1.2rem; color: #e05c8a; margin-left: 12px; flex-shrink:0;">+</span>
+      </summary>
+      <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #4b5563; line-height: 1.7;">FitFamily Gym is on ITI Road, near Parihar Chowk, Aundh, Pune 411007. We have a spacious, well-ventilated facility with separate changing rooms, a kids area, and ample parking.</div>
+    </details>
   </div>
-  <div class="footer-copy">© 2026 GritBox Training, Wakad, Pune. All rights reserved.</div>
+</section>
+
+<footer>
+  <div class="footer-logo">FitFamily</div>
+  <div class="footer-links">
+    <a href="#programs">Programs</a><a href="#pricing">Plans</a><a href="#contact">Contact</a>
+  </div>
+  <div class="footer-copy">© 2026 FitFamily Gym, Aundh, Pune. All rights reserved. | Made with 💕 for families.</div>
+</footer>
+</body>
+</html>
+Made with 💕 for families.</div>
 </footer>
 </body>
 </html>
