@@ -3,307 +3,388 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ZenStrength Studio | Yoga & Functional Fitness | Baner, Pune</title>
-<meta name="description" content="ZenStrength Studio — yoga and functional fitness in Baner, Pune. Mind-body balance, CrossFit-inspired training, meditation classes.">
-<meta property="og:title" content="ZenStrength Studio — Baner, Pune">
-<meta property="og:description" content="Yoga meets functional fitness. Mind-body balance in Baner.">
+<title>GritBox Training | CrossFit & Functional Fitness | Wakad, Pune</title>
+<meta name="description" content="GritBox Training — CrossFit & Functional Fitness in Wakad, Pune. Daily WODs, expert coaching, strong community. Try a free class.">
+<meta name="keywords" content="crossfit pune, crossfit wakad, functional fitness pune, wod pune, crossfit box pune">
+<meta property="og:title" content="GritBox Training | CrossFit & Functional Fitness | Wakad, Pune">
+<meta property="og:description" content="GritBox Training — CrossFit & Functional Fitness in Wakad, Pune. Daily WODs, expert coaching, strong community. Try a free class.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://invictus-gym-demos.vercel.app/04-crossfit-box/">
-<link rel="canonical" href="https://invictus-gym-demos.vercel.app/04-crossfit-box/">
+<meta property="og:image" content="https://invictus-ai.in/assets/gritbox-og.jpg">
+<link rel="canonical" href="https://invictus-ai.in/gym/gritbox">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ExerciseGym",
+  "name": "GritBox Training",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pune",
+    "addressRegion": "Maharashtra",
+    "addressCountry": "IN"
+  },
+  "url": "https://invictus-ai.in",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.3",
+    "reviewCount": "167"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "18.5912",
+    "longitude": "73.7632"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What type of training does GritBox offer in Wakad, Pune?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GritBox is a CrossFit and functional training facility in Wakad, Pune. We offer CrossFit WODs, Olympic weightlifting coaching, HIIT classes, endurance training, and competition prep programs for all fitness levels."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is CrossFit safe for beginners at GritBox Pune?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, GritBox has a structured onboarding program (Foundations Course) for beginners covering proper Olympic lift technique, gymnastics basics, and metabolic conditioning. All coaches are CrossFit L1+ certified."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the membership options at GritBox Wakad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GritBox offers Unlimited CrossFit from ₹3,000/month, Personal Coaching from ₹6,000/month, and Competition Prep packages up to ₹10,000/month. Drop-in sessions available at ₹500."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does GritBox have Olympic weightlifting coaching?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, GritBox has dedicated Olympic weightlifting platforms with bumper plates and certified weightlifting coaches. We offer both group and 1-on-1 coaching for snatch, clean & jerk technique development."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is GritBox Training located in Pune?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GritBox Training is near Datta Mandir Chowk, Wakad, Pune 411057. Fully air-conditioned 3,000 sq ft facility with rubber flooring, rigs, rowers, assault bikes, and all CrossFit equipment."
+      }
+    }
+  ]
+}
+</script>
 <style>
   *{margin:0;padding:0;box-sizing:border-box;}
-  :root{--bg:#f7f5f0;--card:#fff;--dark:#1a1a2e;--accent:#6b8f4e;--accent2:#d4a853;--text:#2d3748;--muted:#718096;--light:#edf2f7;}
+  :root{--bg:#0d0d0d;--card:#1a1a1a;--accent:#ff4500;--accent2:#ff8c00;--text:#f5f5f5;--muted:#999;--green:#00c853;}
   body{font-family:'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
-  nav{position:fixed;top:0;width:100%;background:rgba(247,245,240,0.97);backdrop-filter:blur(8px);z-index:100;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(107,143,78,0.2);}
-  .logo{font-size:1.5rem;font-weight:800;color:var(--accent);letter-spacing:-0.5px;}
-  .logo span{color:var(--dark);}
+  nav{position:fixed;top:0;width:100%;background:rgba(13,13,13,0.97);z-index:100;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid var(--accent);}
+  .logo{font-size:1.5rem;font-weight:900;color:var(--accent);letter-spacing:2px;text-transform:uppercase;}
   .nav-links{display:flex;gap:2rem;list-style:none;}
-  .nav-links a{color:var(--muted);text-decoration:none;font-size:0.9rem;transition:color 0.2s;}
+  .nav-links a{color:var(--muted);text-decoration:none;font-size:0.9rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;transition:color 0.2s;}
   .nav-links a:hover{color:var(--accent);}
-  .nav-cta{background:var(--accent);color:#fff;padding:0.5rem 1.2rem;border-radius:6px;text-decoration:none;font-weight:700;font-size:0.9rem;}
+  .nav-cta{background:var(--accent);color:#fff;padding:0.5rem 1.2rem;border-radius:4px;text-decoration:none;font-weight:900;font-size:0.9rem;text-transform:uppercase;letter-spacing:1px;}
   /* HERO */
-  .hero{min-height:100vh;display:flex;align-items:center;background:linear-gradient(135deg,var(--dark) 0%,#2d4a1e 100%);color:#fff;padding:6rem 2rem 4rem;}
-  .hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
-  .hero-badge{display:inline-block;background:rgba(107,143,78,0.3);border:1px solid rgba(107,143,78,0.5);color:#a3c27c;padding:0.4rem 1rem;border-radius:20px;font-size:0.8rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:1.5rem;}
-  .hero h1{font-size:clamp(2.5rem,5vw,4rem);font-weight:900;line-height:1.1;margin-bottom:1.5rem;}
-  .hero h1 .accent{color:var(--accent2);}
-  .hero p{font-size:1.1rem;color:#cbd5e0;margin-bottom:2.5rem;max-width:480px;}
-  .hero-btns{display:flex;gap:1rem;flex-wrap:wrap;}
-  .btn-green{background:var(--accent);color:#fff;padding:0.9rem 2rem;border-radius:8px;text-decoration:none;font-weight:700;}
-  .btn-outline{background:transparent;border:2px solid rgba(255,255,255,0.4);color:#fff;padding:0.9rem 2rem;border-radius:8px;text-decoration:none;font-weight:700;}
-  .hero-visual{background:rgba(107,143,78,0.15);border:1px solid rgba(107,143,78,0.3);border-radius:16px;padding:2.5rem;text-align:center;}
-  .hero-visual .big-emoji{font-size:5rem;margin-bottom:1rem;}
-  .hero-visual h3{color:#fff;font-size:1.3rem;margin-bottom:0.5rem;}
-  .hero-visual p{color:#a0aec0;font-size:0.9rem;}
-  .feature-list{list-style:none;margin-top:1.5rem;display:flex;flex-direction:column;gap:0.6rem;}
-  .feature-list li{color:#a3c27c;font-size:0.9rem;padding-left:1.5rem;position:relative;text-align:left;}
-  .feature-list li::before{content:'✦';position:absolute;left:0;color:var(--accent2);}
+  .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:6rem 2rem 4rem;position:relative;overflow:hidden;background:#0d0d0d;}
+  .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 50%,rgba(255,69,0,0.15),transparent 70%);}
+  .hero-badge{display:inline-block;background:var(--accent);color:#fff;padding:0.4rem 1.2rem;border-radius:3px;font-size:0.75rem;font-weight:900;letter-spacing:2px;text-transform:uppercase;margin-bottom:1.5rem;}
+  .hero h1{font-size:clamp(3rem,8vw,7rem);font-weight:900;line-height:1;text-transform:uppercase;letter-spacing:-1px;margin-bottom:1.5rem;}
+  .hero h1 .fire{color:var(--accent);text-shadow:0 0 40px rgba(255,69,0,0.5);}
+  .hero p{font-size:1.2rem;color:var(--muted);max-width:550px;margin:0 auto 3rem;}
+  .hero-btns{display:flex;gap:1rem;justify-content:center;}
+  .btn-fire{background:var(--accent);color:#fff;padding:1rem 2.5rem;border-radius:4px;text-decoration:none;font-weight:900;font-size:1rem;text-transform:uppercase;letter-spacing:1px;}
+  .btn-ghost{background:transparent;border:2px solid var(--muted);color:var(--muted);padding:1rem 2.5rem;border-radius:4px;text-decoration:none;font-weight:700;font-size:1rem;text-transform:uppercase;letter-spacing:1px;}
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent);}
   /* STATS */
-  .stats{padding:3rem 2rem;background:var(--card);border-bottom:1px solid var(--light);}
+  .stats{padding:3rem 2rem;background:var(--accent);color:#fff;}
   .stats-grid{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center;}
-  .stat-num{font-size:2.5rem;font-weight:900;color:var(--accent);}
-  .stat-label{color:var(--muted);font-size:0.85rem;}
+  .stat-num{font-size:2.5rem;font-weight:900;text-transform:uppercase;}
+  .stat-label{font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;opacity:0.8;}
   /* SECTIONS */
   section{padding:5rem 2rem;}
   .container{max-width:1100px;margin:0 auto;}
-  .section-tag{color:var(--accent);font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;margin-bottom:0.8rem;}
-  .section-title{font-size:2.2rem;font-weight:800;margin-bottom:1rem;color:var(--dark);}
-  .section-sub{color:var(--muted);font-size:1.1rem;max-width:600px;}
-  /* CLASSES */
-  .classes-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:3rem;}
-  .class-card{background:var(--card);border:1px solid var(--light);border-radius:12px;overflow:hidden;transition:transform 0.3s,box-shadow 0.3s;}
-  .class-card:hover{transform:translateY(-4px);box-shadow:0 8px 30px rgba(0,0,0,0.1);}
-  .class-header{padding:2rem;background:linear-gradient(135deg,var(--dark),#2d4a1e);color:#fff;text-align:center;}
-  .class-emoji{font-size:3rem;margin-bottom:0.8rem;}
-  .class-name{font-size:1.1rem;font-weight:700;}
-  .class-body{padding:1.5rem;}
-  .class-desc{color:var(--muted);font-size:0.9rem;margin-bottom:1rem;}
-  .class-meta{display:flex;gap:1rem;font-size:0.8rem;}
-  .class-meta span{background:var(--light);padding:0.3rem 0.8rem;border-radius:20px;color:var(--text);font-weight:600;}
-  /* SCHEDULE */
-  .schedule-table{width:100%;border-collapse:collapse;margin-top:2rem;background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.05);}
-  .schedule-table th{background:var(--dark);color:#fff;padding:1rem;text-align:left;font-size:0.85rem;text-transform:uppercase;letter-spacing:1px;}
-  .schedule-table td{padding:0.9rem 1rem;border-bottom:1px solid var(--light);font-size:0.9rem;}
-  .schedule-table tr:last-child td{border-bottom:none;}
-  .schedule-table tr:hover td{background:var(--bg);}
-  .tag-yoga{background:#e8f4e8;color:#2d6a2d;padding:0.2rem 0.7rem;border-radius:20px;font-size:0.78rem;font-weight:600;}
-  .tag-hiit{background:#fff0e0;color:#8b4500;padding:0.2rem 0.7rem;border-radius:20px;font-size:0.78rem;font-weight:600;}
-  .tag-func{background:#e8eeff;color:#2d3da8;padding:0.2rem 0.7rem;border-radius:20px;font-size:0.78rem;font-weight:600;}
+  .section-tag{color:var(--accent);font-size:0.75rem;font-weight:900;text-transform:uppercase;letter-spacing:3px;margin-bottom:0.8rem;}
+  .section-title{font-size:2.5rem;font-weight:900;text-transform:uppercase;margin-bottom:1rem;}
+  .section-sub{color:var(--muted);font-size:1rem;max-width:600px;}
+  /* WORKOUTS */
+  .workouts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1px;margin-top:3rem;background:rgba(255,255,255,0.05);}
+  .workout-item{background:var(--card);padding:2rem;border-bottom:3px solid transparent;transition:border-color 0.3s;}
+  .workout-item:hover{border-color:var(--accent);}
+  .workout-num{font-size:0.75rem;font-weight:900;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:0.5rem;}
+  .workout-name{font-size:1.3rem;font-weight:900;text-transform:uppercase;margin-bottom:0.5rem;}
+  .workout-desc{color:var(--muted);font-size:0.9rem;}
   /* PRICING */
-  .pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.5rem;margin-top:3rem;}
-  .price-card{background:var(--card);border:2px solid var(--light);border-radius:12px;padding:2rem;position:relative;}
-  .price-card.featured{border-color:var(--accent);}
-  .price-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;padding:0.3rem 1rem;border-radius:20px;font-size:0.75rem;font-weight:700;white-space:nowrap;}
-  .price-plan{font-weight:700;color:var(--muted);margin-bottom:0.5rem;}
-  .price-amount{font-size:2.5rem;font-weight:900;color:var(--dark);}
+  .pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:3rem;}
+  .price-card{background:var(--card);border:1px solid rgba(255,255,255,0.05);border-radius:6px;padding:2rem;position:relative;}
+  .price-card.featured{border-color:var(--accent);background:rgba(255,69,0,0.05);}
+  .price-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;padding:0.3rem 1rem;border-radius:3px;font-size:0.7rem;font-weight:900;text-transform:uppercase;letter-spacing:1px;white-space:nowrap;}
+  .price-plan{font-size:0.8rem;font-weight:900;color:var(--muted);text-transform:uppercase;letter-spacing:2px;margin-bottom:0.8rem;}
+  .price-amount{font-size:3rem;font-weight:900;margin-bottom:0.3rem;}
   .price-amount span{font-size:1rem;font-weight:400;color:var(--muted);}
   .price-features{list-style:none;margin:1.5rem 0;display:flex;flex-direction:column;gap:0.6rem;}
-  .price-features li{font-size:0.9rem;color:var(--muted);padding-left:1.5rem;position:relative;}
-  .price-features li::before{content:'✓';position:absolute;left:0;color:var(--accent);font-weight:700;}
-  .price-cta{display:block;text-align:center;padding:0.8rem;border-radius:8px;font-weight:700;text-decoration:none;transition:all 0.2s;border:2px solid var(--accent);color:var(--accent);}
-  .featured .price-cta{background:var(--accent);color:#fff;border-color:var(--accent);}
+  .price-features li{color:var(--muted);font-size:0.9rem;padding-left:1.5rem;position:relative;}
+  .price-features li::before{content:'▶';position:absolute;left:0;color:var(--accent);font-size:0.6rem;top:4px;}
+  .price-cta{display:block;text-align:center;padding:0.9rem;border-radius:4px;font-weight:900;text-decoration:none;text-transform:uppercase;letter-spacing:1px;font-size:0.85rem;border:2px solid var(--accent);color:var(--accent);transition:all 0.2s;}
+  .featured .price-cta{background:var(--accent);color:#fff;}
   .price-cta:hover{background:var(--accent);color:#fff;}
+  /* TESTIMONIALS */
+  .testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:3rem;}
+  .testi-card{background:var(--card);border-left:4px solid var(--accent);padding:1.5rem;}
+  .testi-text{color:var(--muted);font-size:0.95rem;line-height:1.7;margin-bottom:1rem;font-style:italic;}
+  .testi-author{font-weight:900;text-transform:uppercase;font-size:0.85rem;color:var(--accent);}
+  .testi-tag{color:var(--muted);font-size:0.8rem;}
   /* CONTACT */
   .contact-wrapper{display:grid;grid-template-columns:1fr 1fr;gap:4rem;margin-top:3rem;}
   .contact-info{display:flex;flex-direction:column;gap:1.5rem;}
   .contact-item{display:flex;gap:1rem;align-items:flex-start;}
-  .contact-icon{width:44px;height:44px;background:var(--light);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;}
-  .contact-label{color:var(--muted);font-size:0.8rem;text-transform:uppercase;letter-spacing:1px;}
-  .contact-value{font-weight:600;color:var(--dark);}
-  .contact-form{background:var(--card);border:1px solid var(--light);border-radius:12px;padding:2rem;box-shadow:0 4px 20px rgba(0,0,0,0.06);}
+  .contact-icon{width:44px;height:44px;background:rgba(255,69,0,0.1);border:1px solid rgba(255,69,0,0.3);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;}
+  .contact-label{color:var(--accent);font-size:0.7rem;text-transform:uppercase;letter-spacing:2px;font-weight:700;}
+  .contact-value{font-weight:600;margin-top:0.2rem;}
+  .contact-form{background:var(--card);border:1px solid rgba(255,255,255,0.08);border-radius:6px;padding:2rem;}
   .form-group{margin-bottom:1.2rem;}
-  .form-group label{display:block;color:var(--muted);font-size:0.85rem;margin-bottom:0.4rem;}
-  .form-group input,.form-group select{width:100%;background:var(--bg);border:1px solid var(--light);border-radius:6px;padding:0.7rem 1rem;color:var(--text);font-size:0.95rem;}
+  .form-group label{display:block;color:var(--muted);font-size:0.8rem;text-transform:uppercase;letter-spacing:1px;margin-bottom:0.4rem;}
+  .form-group input,.form-group select{width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:4px;padding:0.7rem 1rem;color:var(--text);font-size:0.95rem;}
   .form-group input:focus,.form-group select:focus{outline:none;border-color:var(--accent);}
-  .form-submit{width:100%;background:var(--accent);color:#fff;border:none;padding:0.9rem;border-radius:8px;font-weight:700;font-size:1rem;cursor:pointer;}
-  footer{background:var(--dark);color:#a0aec0;padding:3rem 2rem;text-align:center;}
-  .footer-logo{font-size:1.8rem;font-weight:900;color:var(--accent);margin-bottom:1rem;}
+  .form-submit{width:100%;background:var(--accent);color:#fff;border:none;padding:1rem;border-radius:4px;font-weight:900;font-size:1rem;text-transform:uppercase;letter-spacing:1px;cursor:pointer;}
+  footer{background:#050505;border-top:2px solid var(--accent);padding:3rem 2rem;text-align:center;}
+  .footer-logo{font-size:2rem;font-weight:900;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:1rem;}
   .footer-links{display:flex;gap:2rem;justify-content:center;margin-bottom:1.5rem;flex-wrap:wrap;}
-  .footer-links a{color:#a0aec0;text-decoration:none;font-size:0.9rem;}
-  .footer-copy{font-size:0.8rem;}
-  @media(max-width:768px){.hero-inner{grid-template-columns:1fr;}.stats-grid{grid-template-columns:repeat(2,1fr);}.contact-wrapper{grid-template-columns:1fr;}.nav-links{display:none;}}
+  .footer-links a{color:var(--muted);text-decoration:none;font-size:0.85rem;text-transform:uppercase;letter-spacing:1px;}
+  .footer-copy{color:var(--muted);font-size:0.8rem;}
+  @media(max-width:768px){.stats-grid{grid-template-columns:repeat(2,1fr);}.contact-wrapper{grid-template-columns:1fr;}.nav-links{display:none;}}
 </style>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ExerciseGym","name":"ZenStrength Studio","address":{"@type":"PostalAddress","addressLocality":"Baner, Pune","addressRegion":"Maharashtra","addressCountry":"IN"},"telephone":"+912012345678","openingHours":"Mo-Su 05:00-22:00"}
-</script>
+
 </head>
 <body>
 <nav>
-  <div class="logo">Zen<span>Strength</span></div>
+  <div class="logo">GritBox</div>
   <ul class="nav-links">
-    <li><a href="#classes">Classes</a></li>
-    <li><a href="#schedule">Schedule</a></li>
-    <li><a href="#pricing">Pricing</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#workouts">Training</a></li>
+    <li><a href="#pricing">Plans</a></li>
+    <li><a href="#contact">Join</a></li>
   </ul>
-  <a href="#contact" class="nav-cta">First Class Free</a>
+  <a href="#contact" class="nav-cta">Free Drop-In</a>
 </nav>
 
 <section class="hero">
-  <div class="hero-inner">
-    <div>
-      <div class="hero-badge">🌿 Mind · Body · Movement</div>
-      <h1>Strength from the <span class="accent">Inside Out</span></h1>
-      <p>Where yoga meets functional fitness. Build a body that moves well, feels great, and lasts decades. Baner's most holistic studio.</p>
-      <div class="hero-btns">
-        <a href="#contact" class="btn-green">Book Free Class</a>
-        <a href="#classes" class="btn-outline">See Classes</a>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="big-emoji">🧘</div>
-      <h3>Holistic Fitness Studio</h3>
-      <p>Yoga · HIIT · Functional · Meditation</p>
-      <ul class="feature-list">
-        <li>Small batch classes (max 12)</li>
-        <li>AC studio with natural light</li>
-        <li>Premium Manduka mats provided</li>
-        <li>Certified 500hr yoga teachers</li>
-        <li>Nutrition & lifestyle coaching</li>
-      </ul>
+  <div>
+    <div class="hero-badge">🔥 Wakad's Most Intense Gym</div>
+    <h1>No Excuses.<br><span class="fire">Pure Grit.</span></h1>
+    <p>CrossFit-inspired WODs, barbell strength, and conditioning that separates the committed from the casual. Are you in?</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-fire">Start Free Drop-In</a>
+      <a href="#workouts" class="btn-ghost">See Training</a>
     </div>
   </div>
 </section>
 
 <div class="stats">
   <div class="stats-grid">
-    <div><div class="stat-num">1,400+</div><div class="stat-label">Active Members</div></div>
-    <div><div class="stat-num">8</div><div class="stat-label">Certified Instructors</div></div>
-    <div><div class="stat-num">24</div><div class="stat-label">Weekly Classes</div></div>
-    <div><div class="stat-num">4.9★</div><div class="stat-label">Google Rating</div></div>
+    <div><div class="stat-num">3,200+</div><div class="stat-label">Athletes Trained</div></div>
+    <div><div class="stat-num">15</div><div class="stat-label">WODs / Week</div></div>
+    <div><div class="stat-num">6</div><div class="stat-label">Expert Coaches</div></div>
+    <div><div class="stat-num">24/7</div><div class="stat-label">Access Available</div></div>
   </div>
 </div>
 
-<section id="classes">
+<section id="workouts" style="background:var(--card);">
   <div class="container">
-    <div class="section-tag">What We Teach</div>
-    <div class="section-title">Classes That <span style="color:var(--accent);">Transform</span></div>
-    <div class="section-sub">Every class is thoughtfully designed to build strength, flexibility, and mental clarity together.</div>
-    <div class="classes-grid">
-      <div class="class-card">
-        <div class="class-header"><div class="class-emoji">🧘</div><div class="class-name">Hatha Yoga</div></div>
-        <div class="class-body">
-          <div class="class-desc">Traditional postures, breathwork, and meditation. Foundation of our practice — builds flexibility, balance, and mental stillness.</div>
-          <div class="class-meta"><span>All Levels</span><span>60 min</span></div>
-        </div>
+    <div class="section-tag">Training Methods</div>
+    <div class="section-title">How We Build <span style="color:var(--accent);">Animals</span></div>
+    <div class="section-sub">Every session is programmed, coached, and scaled — beginner to elite. No aimless wandering.</div>
+    <div class="workouts-grid">
+      <div class="workout-item">
+        <div class="workout-num">01</div>
+        <div class="workout-name">WOD (Workout of the Day)</div>
+        <div class="workout-desc">Daily programmed CrossFit-style workouts. Constantly varied functional movements executed at high intensity.</div>
       </div>
-      <div class="class-card">
-        <div class="class-header"><div class="class-emoji">🔥</div><div class="class-name">Power Vinyasa</div></div>
-        <div class="class-body">
-          <div class="class-desc">Dynamic flow linking breath to movement. Builds cardiovascular fitness and muscular endurance through yoga-inspired sequences.</div>
-          <div class="class-meta"><span>Intermediate+</span><span>60 min</span></div>
-        </div>
+      <div class="workout-item">
+        <div class="workout-num">02</div>
+        <div class="workout-name">Olympic Lifting</div>
+        <div class="workout-desc">Snatch, clean & jerk, and accessory work. Technique-first coaching with heavy work for advanced athletes.</div>
       </div>
-      <div class="class-card">
-        <div class="class-header"><div class="class-emoji">⚡</div><div class="class-name">Functional HIIT</div></div>
-        <div class="class-body">
-          <div class="class-desc">High-intensity intervals using bodyweight, kettlebells, and resistance bands. Maximum calorie burn in minimum time.</div>
-          <div class="class-meta"><span>Beginner-Advanced</span><span>45 min</span></div>
-        </div>
+      <div class="workout-item">
+        <div class="workout-num">03</div>
+        <div class="workout-name">Strength Bias</div>
+        <div class="workout-desc">Conjugate-inspired 5-day program: squat, press, deadlift, accessory. Built for raw strength gains.</div>
       </div>
-      <div class="class-card">
-        <div class="class-header"><div class="class-emoji">🏋️</div><div class="class-name">Mobility & Strength</div></div>
-        <div class="class-body">
-          <div class="class-desc">Joint mobility, corrective exercise, and progressive strength training. Ideal for desk workers, athletes, and those recovering from injury.</div>
-          <div class="class-meta"><span>All Levels</span><span>60 min</span></div>
-        </div>
+      <div class="workout-item">
+        <div class="workout-num">04</div>
+        <div class="workout-name">Metabolic Conditioning</div>
+        <div class="workout-desc">EMOM, AMRAP, Tabata. Structured intervals that maximize VO2 max, lactate threshold, and work capacity.</div>
       </div>
-      <div class="class-card">
-        <div class="class-header"><div class="class-emoji">🌅</div><div class="class-name">Sunrise Meditation</div></div>
-        <div class="class-body">
-          <div class="class-desc">Guided mindfulness, breathwork (pranayama), and body scan. The perfect start to high-performance days.</div>
-          <div class="class-meta"><span>All Levels</span><span>30 min</span></div>
-        </div>
+      <div class="workout-item">
+        <div class="workout-num">05</div>
+        <div class="workout-name">Foundations Course</div>
+        <div class="workout-desc">3-session onboarding for all new members. Learn movement patterns, meet coaches, scale intelligently from day 1.</div>
       </div>
-      <div class="class-card">
-        <div class="class-header"><div class="class-emoji">🤸</div><div class="class-name">Aerial Yoga</div></div>
-        <div class="class-body">
-          <div class="class-desc">Yoga with silk hammocks — decompresses the spine, builds core strength, and makes inversions accessible to everyone.</div>
-          <div class="class-meta"><span>Beginner-friendly</span><span>75 min</span></div>
-        </div>
+      <div class="workout-item">
+        <div class="workout-num">06</div>
+        <div class="workout-name">Open Gym + Skill Work</div>
+        <div class="workout-desc">Self-directed training for handstands, double-unders, kipping, muscle-ups, and mobility work between WODs.</div>
       </div>
     </div>
-  </div>
-</section>
-
-<section id="schedule" style="background:var(--card);">
-  <div class="container">
-    <div class="section-tag">Weekly Schedule</div>
-    <div class="section-title">Find Your <span style="color:var(--accent);">Slot</span></div>
-    <div class="section-sub">Classes run 7 days a week. Book online or walk in — we keep batch sizes small.</div>
-    <table class="schedule-table">
-      <thead><tr><th>Day</th><th>Time</th><th>Class</th><th>Instructor</th><th>Spots</th></tr></thead>
-      <tbody>
-        <tr><td>Mon / Wed / Fri</td><td>6:00 AM</td><td><span class="tag-yoga">Sunrise Meditation</span></td><td>Anjali R.</td><td>8 / 12</td></tr>
-        <tr><td>Mon / Wed / Fri</td><td>7:00 AM</td><td><span class="tag-yoga">Hatha Yoga</span></td><td>Sneha K.</td><td>10 / 12</td></tr>
-        <tr><td>Tue / Thu / Sat</td><td>7:00 AM</td><td><span class="tag-hiit">Functional HIIT</span></td><td>Raj P.</td><td>9 / 12</td></tr>
-        <tr><td>Mon / Wed / Fri</td><td>9:00 AM</td><td><span class="tag-func">Mobility & Strength</span></td><td>Pooja M.</td><td>7 / 12</td></tr>
-        <tr><td>Tue / Thu</td><td>10:00 AM</td><td><span class="tag-yoga">Aerial Yoga</span></td><td>Anjali R.</td><td>6 / 10</td></tr>
-        <tr><td>Mon–Sat</td><td>6:00 PM</td><td><span class="tag-yoga">Power Vinyasa</span></td><td>Sneha K.</td><td>11 / 12</td></tr>
-        <tr><td>Mon–Sat</td><td>7:00 PM</td><td><span class="tag-hiit">Functional HIIT</span></td><td>Raj P.</td><td>8 / 12</td></tr>
-        <tr><td>Sunday</td><td>8:00 AM</td><td><span class="tag-yoga">Deep Hatha + Meditation</span></td><td>Anjali R.</td><td>12 / 15</td></tr>
-      </tbody>
-    </table>
   </div>
 </section>
 
 <section id="pricing">
   <div class="container">
-    <div class="section-tag">Membership</div>
-    <div class="section-title">Invest in <span style="color:var(--accent);">Yourself</span></div>
+    <div class="section-tag">Plans</div>
+    <div class="section-title">Pick Your <span style="color:var(--accent);">Level</span></div>
     <div class="pricing-grid">
       <div class="price-card">
-        <div class="price-plan">Drop-In</div>
-        <div class="price-amount">₹499<span>/class</span></div>
+        <div class="price-plan">Starter</div>
+        <div class="price-amount">₹1,799<span>/mo</span></div>
         <ul class="price-features">
-          <li>Single class pass</li>
-          <li>Any class, any slot</li>
-          <li>Mat & props included</li>
-          <li>No commitment</li>
+          <li>10 WOD classes/month</li>
+          <li>Foundations course included</li>
+          <li>Locker access</li>
+          <li>Community WhatsApp</li>
         </ul>
-        <a href="#contact" class="price-cta">Book Now</a>
+        <a href="#contact" class="price-cta">Start Here</a>
       </div>
       <div class="price-card featured">
-        <div class="price-badge">Best Value</div>
-        <div class="price-plan">Monthly Unlimited</div>
-        <div class="price-amount">₹2,499<span>/month</span></div>
+        <div class="price-badge">Most Popular</div>
+        <div class="price-plan">Unlimited</div>
+        <div class="price-amount">₹3,299<span>/mo</span></div>
         <ul class="price-features">
-          <li>All classes, unlimited</li>
-          <li>Priority booking</li>
-          <li>1 nutrition consult/month</li>
-          <li>Recorded class library access</li>
-          <li>Community WhatsApp group</li>
+          <li>Unlimited WODs + Open Gym</li>
+          <li>Strength & Olympic classes</li>
+          <li>Monthly performance test</li>
+          <li>Programming access (online)</li>
+          <li>1 nutrition consultation</li>
         </ul>
-        <a href="#contact" class="price-cta">Join Now</a>
+        <a href="#contact" class="price-cta">Go Unlimited</a>
       </div>
       <div class="price-card">
-        <div class="price-plan">Annual Membership</div>
-        <div class="price-amount">₹21,999<span>/year</span></div>
+        <div class="price-plan">Team + PT</div>
+        <div class="price-amount">₹5,499<span>/mo</span></div>
         <ul class="price-features">
-          <li>Everything in Monthly</li>
-          <li>Save ₹8,000 vs monthly</li>
-          <li>3 PT sessions included</li>
-          <li>Annual body assessment</li>
-          <li>Guest passes (12/year)</li>
+          <li>Unlimited access</li>
+          <li>6 PT sessions/month</li>
+          <li>Custom strength program</li>
+          <li>Bi-weekly check-ins</li>
+          <li>Competition prep track</li>
         </ul>
-        <a href="#contact" class="price-cta">Go Annual</a>
+        <a href="#contact" class="price-cta">Get Coached</a>
       </div>
     </div>
   </div>
 </section>
 
-<section id="contact" style="background:var(--light);">
+<section id="testimonials" style="background:var(--card);">
   <div class="container">
-    <div class="section-tag">Get Started</div>
-    <div class="section-title">Your First Class is <span style="color:var(--accent);">Free</span></div>
-    <div class="contact-wrapper">
-      <div class="contact-info">
-        <div class="contact-item"><div class="contact-icon">📍</div><div><div class="contact-label">Studio</div><div class="contact-value">ZenStrength Studio, Baner Road, Pune 411045</div></div></div>
-        <div class="contact-item"><div class="contact-icon">⏰</div><div><div class="contact-label">Hours</div><div class="contact-value">Mon–Fri: 6 AM – 9 PM<br>Sat–Sun: 7 AM – 7 PM</div></div></div>
-        <div class="contact-item"><div class="contact-icon">📞</div><div><div class="contact-label">Phone</div><div class="contact-value">+91 98220 67890</div></div></div>
-        <div class="contact-item"><div class="contact-icon">✉️</div><div><div class="contact-label">Email</div><div class="contact-value">hello@zenstrengthpune.in</div></div></div>
+    <div class="section-tag">From the Box</div>
+    <div class="section-title">Real People. <span style="color:var(--accent);">Real Results.</span></div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-text">"I've tried every gym in Pune. GritBox is the only place where I actually get pushed. 14 kg down, PR on every lift. Never leaving."</div>
+        <div class="testi-author">Amit Kulkarni</div>
+        <div class="testi-tag">14 kg lost · 8 months</div>
       </div>
-      <div class="contact-form">
-        <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your name"></div>
-        <div class="form-group"><label>Phone</label><input type="tel" placeholder="+91 XXXXX XXXXX"></div>
-        <div class="form-group"><label>Preferred Class</label>
-          <select><option>Hatha Yoga</option><option>Power Vinyasa</option><option>Functional HIIT</option><option>Mobility & Strength</option><option>Aerial Yoga</option><option>Sunrise Meditation</option></select>
-        </div>
-        <div class="form-group"><label>Best Time to Call</label>
-          <select><option>Morning (8–11 AM)</option><option>Afternoon (12–4 PM)</option><option>Evening (5–8 PM)</option></select>
-        </div>
-        <button class="form-submit">Book My Free Class →</button>
+      <div class="testi-card">
+        <div class="testi-text">"The coaches are insane — they actually care about your form and your progress. Not just counting reps. My clean technique improved 10x in 3 months."</div>
+        <div class="testi-author">Shreya Nair</div>
+        <div class="testi-tag">Olympic Lifting · 3 months</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-text">"Community here is different. You're competing with yourself but cheered on by everyone. I've made actual friends. That's rare in a gym."</div>
+        <div class="testi-author">Kunal Shinde</div>
+        <div class="testi-tag">Unlimited Member · 1 year</div>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-tag">Join the Box</div>
+    <div class="section-title">First Drop-In is <span style="color:var(--accent);">Free</span></div>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <div class="contact-item"><div class="contact-icon">📍</div><div><div class="contact-label">Location</div><div class="contact-value">GritBox, Wakad Road, Near Hinjewadi Phase 1, Pune 411057</div></div></div>
+        <div class="contact-item"><div class="contact-icon">⏰</div><div><div class="contact-label">Hours</div><div class="contact-value">Mon–Fri: 5 AM – 10 PM<br>Sat–Sun: 6 AM – 8 PM</div></div></div>
+        <div class="contact-item"><div class="contact-icon">📞</div><div><div class="contact-label">Phone</div><div class="contact-value">+91 99705 34567</div></div></div>
+        <div class="contact-item"><div class="contact-icon">✉️</div><div><div class="contact-label">Email</div><div class="contact-value">coach@gritboxpune.in</div></div></div>
+      </div>
+      <div class="contact-form">
+        <div class="form-group"><label>Name</label><input type="text" placeholder="Your name"></div>
+        <div class="form-group"><label>Phone</label><input type="tel" placeholder="+91 XXXXX XXXXX"></div>
+        <div class="form-group"><label>Experience Level</label>
+          <select><option>Complete Beginner</option><option>Some Gym Experience</option><option>CrossFit Background</option><option>Competitive Athlete</option></select>
+        </div>
+        <div class="form-group"><label>Preferred Session Time</label>
+          <select><option>Early Morning (5–7 AM)</option><option>Morning (7–10 AM)</option><option>Evening (5–8 PM)</option><option>Night (8–10 PM)</option></select>
+        </div>
+        <button class="form-submit">Book Free Drop-In ▶</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FAQ SECTION -->
+<section style="padding: 60px 5%; max-width: 900px; margin: 0 auto;">
+  <h2 style="text-align:center; font-size: 2rem; font-weight: 800; margin-bottom: 12px; color: #333;">Frequently Asked Questions</h2>
+  <p style="text-align:center; color: #6B7280; margin-bottom: 40px; font-size: 1rem;">Common questions about GritBox Training in Wakad, Pune</p>
+  <div style="display:flex; flex-direction:column; gap: 8px;">
+    <details style="background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden;">
+      <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #1f2937;">
+        What type of training does GritBox offer in Wakad, Pune?
+        <span style="font-size: 1.2rem; color: #ff4500; margin-left: 12px; flex-shrink:0;">+</span>
+      </summary>
+      <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #4b5563; line-height: 1.7;">GritBox is a CrossFit and functional training facility in Wakad, Pune. We offer CrossFit WODs, Olympic weightlifting coaching, HIIT classes, endurance training, and competition prep programs for all fitness levels.</div>
+    </details>
+    <details style="background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden;">
+      <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #1f2937;">
+        Is CrossFit safe for beginners at GritBox Pune?
+        <span style="font-size: 1.2rem; color: #ff4500; margin-left: 12px; flex-shrink:0;">+</span>
+      </summary>
+      <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #4b5563; line-height: 1.7;">Yes, GritBox has a structured onboarding program (Foundations Course) for beginners covering proper Olympic lift technique, gymnastics basics, and metabolic conditioning. All coaches are CrossFit L1+ certified.</div>
+    </details>
+    <details style="background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden;">
+      <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #1f2937;">
+        What are the membership options at GritBox Wakad?
+        <span style="font-size: 1.2rem; color: #ff4500; margin-left: 12px; flex-shrink:0;">+</span>
+      </summary>
+      <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #4b5563; line-height: 1.7;">GritBox offers Unlimited CrossFit from ₹3,000/month, Personal Coaching from ₹6,000/month, and Competition Prep packages up to ₹10,000/month. Drop-in sessions available at ₹500.</div>
+    </details>
+    <details style="background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden;">
+      <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #1f2937;">
+        Does GritBox have Olympic weightlifting coaching?
+        <span style="font-size: 1.2rem; color: #ff4500; margin-left: 12px; flex-shrink:0;">+</span>
+      </summary>
+      <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #4b5563; line-height: 1.7;">Yes, GritBox has dedicated Olympic weightlifting platforms with bumper plates and certified weightlifting coaches. We offer both group and 1-on-1 coaching for snatch, clean & jerk technique development.</div>
+    </details>
+    <details style="background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden;">
+      <summary style="padding: 18px 20px; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: #1f2937;">
+        Where is GritBox Training located in Pune?
+        <span style="font-size: 1.2rem; color: #ff4500; margin-left: 12px; flex-shrink:0;">+</span>
+      </summary>
+      <div style="padding: 0 20px 18px; font-size: 0.9rem; color: #4b5563; line-height: 1.7;">GritBox Training is near Datta Mandir Chowk, Wakad, Pune 411057. Fully air-conditioned 3,000 sq ft facility with rubber flooring, rigs, rowers, assault bikes, and all CrossFit equipment.</div>
+    </details>
   </div>
 </section>
 
 <footer>
-  <div class="footer-logo">ZenStrength</div>
+  <div class="footer-logo">GritBox</div>
   <div class="footer-links">
-    <a href="#classes">Classes</a><a href="#schedule">Schedule</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a>
+    <a href="#workouts">Training</a><a href="#pricing">Plans</a><a href="#contact">Join</a>
   </div>
-  <div class="footer-copy">© 2026 ZenStrength Studio, Baner, Pune. All rights reserved.</div>
+  <div class="footer-copy">© 2026 GritBox Training, Wakad, Pune. All rights reserved.</div>
+</footer>
+</body>
+</html>
+akad, Pune. All rights reserved.</div>
 </footer>
 </body>
 </html>
