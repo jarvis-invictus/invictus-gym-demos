@@ -110,7 +110,7 @@
   .hero-visual p{color:#a0aec0;font-size:0.9rem;}
   .feature-list{list-style:none;margin-top:1.5rem;display:flex;flex-direction:column;gap:0.6rem;}
   .feature-list li{color:#a3c27c;font-size:0.9rem;padding-left:1.5rem;position:relative;text-align:left;}
-  .feature-list li::before{content:'✦';position:absolute;left:0;color:var(--accent2);}
+  .feature-list li::before{content:'';position:absolute;left:0;color:var(--accent2);}
   /* STATS */
   .stats{padding:3rem 2rem;background:var(--card);border-bottom:1px solid var(--light);}
   .stats-grid{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center;}
@@ -152,7 +152,7 @@
   .price-amount span{font-size:1rem;font-weight:400;color:var(--muted);}
   .price-features{list-style:none;margin:1.5rem 0;display:flex;flex-direction:column;gap:0.6rem;}
   .price-features li{font-size:0.9rem;color:var(--muted);padding-left:1.5rem;position:relative;}
-  .price-features li::before{content:'✓';position:absolute;left:0;color:var(--accent);font-weight:700;}
+  .price-features li::before{content:'<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;"><polyline points="20 6 9 17 4 12"/></svg>';position:absolute;left:0;color:var(--accent);font-weight:700;}
   .price-cta{display:block;text-align:center;padding:0.8rem;border-radius:8px;font-weight:700;text-decoration:none;transition:all 0.2s;border:2px solid var(--accent);color:var(--accent);}
   .featured .price-cta{background:var(--accent);color:#fff;border-color:var(--accent);}
   .price-cta:hover{background:var(--accent);color:#fff;}
@@ -193,7 +193,7 @@
 <section class="hero">
   <div class="hero-inner">
     <div>
-      <div class="hero-badge">🌿 Mind · Body · Movement</div>
+      <div class="hero-badge"> Mind · Body · Movement</div>
       <h1>Strength from the <span class="accent">Inside Out</span></h1>
       <p>Where yoga meets functional fitness. Build a body that moves well, feels great, and lasts decades. Baner's most holistic studio.</p>
       <div class="hero-btns">
@@ -202,7 +202,7 @@
       </div>
     </div>
     <div class="hero-visual">
-      <div class="big-emoji">🧘</div>
+      <div class="big-emoji"></div>
       <h3>Holistic Fitness Studio</h3>
       <p>Yoga · HIIT · Functional · Meditation</p>
       <ul class="feature-list">
@@ -221,7 +221,7 @@
     <div><div class="stat-num">1,400+</div><div class="stat-label">Active Members</div></div>
     <div><div class="stat-num">8</div><div class="stat-label">Certified Instructors</div></div>
     <div><div class="stat-num">24</div><div class="stat-label">Weekly Classes</div></div>
-    <div><div class="stat-num">4.9★</div><div class="stat-label">Google Rating</div></div>
+    <div><div class="stat-num">4.9<svg width="14" height="14" viewBox="0 0 24 24" fill="#facc15" stroke="none" style="display:inline-block;vertical-align:middle;"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><div class="stat-label">Google Rating</div></div>
   </div>
 </div>
 
@@ -232,42 +232,42 @@
     <div class="section-sub">Every class is thoughtfully designed to build strength, flexibility, and mental clarity together.</div>
     <div class="classes-grid">
       <div class="class-card">
-        <div class="class-header"><div class="class-emoji">🧘</div><div class="class-name">Hatha Yoga</div></div>
+        <div class="class-header"><div class="class-emoji"></div><div class="class-name">Hatha Yoga</div></div>
         <div class="class-body">
           <div class="class-desc">Traditional postures, breathwork, and meditation. Foundation of our practice — builds flexibility, balance, and mental stillness.</div>
           <div class="class-meta"><span>All Levels</span><span>60 min</span></div>
         </div>
       </div>
       <div class="class-card">
-        <div class="class-header"><div class="class-emoji">🔥</div><div class="class-name">Power Vinyasa</div></div>
+        <div class="class-header"><div class="class-emoji"></div><div class="class-name">Power Vinyasa</div></div>
         <div class="class-body">
           <div class="class-desc">Dynamic flow linking breath to movement. Builds cardiovascular fitness and muscular endurance through yoga-inspired sequences.</div>
           <div class="class-meta"><span>Intermediate+</span><span>60 min</span></div>
         </div>
       </div>
       <div class="class-card">
-        <div class="class-header"><div class="class-emoji">⚡</div><div class="class-name">Functional HIIT</div></div>
+        <div class="class-header"><div class="class-emoji"></div><div class="class-name">Functional HIIT</div></div>
         <div class="class-body">
           <div class="class-desc">High-intensity intervals using bodyweight, kettlebells, and resistance bands. Maximum calorie burn in minimum time.</div>
           <div class="class-meta"><span>Beginner-Advanced</span><span>45 min</span></div>
         </div>
       </div>
       <div class="class-card">
-        <div class="class-header"><div class="class-emoji">🏋️</div><div class="class-name">Mobility & Strength</div></div>
+        <div class="class-header"><div class="class-emoji"></div><div class="class-name">Mobility & Strength</div></div>
         <div class="class-body">
           <div class="class-desc">Joint mobility, corrective exercise, and progressive strength training. Ideal for desk workers, athletes, and those recovering from injury.</div>
           <div class="class-meta"><span>All Levels</span><span>60 min</span></div>
         </div>
       </div>
       <div class="class-card">
-        <div class="class-header"><div class="class-emoji">🌅</div><div class="class-name">Sunrise Meditation</div></div>
+        <div class="class-header"><div class="class-emoji"></div><div class="class-name">Sunrise Meditation</div></div>
         <div class="class-body">
           <div class="class-desc">Guided mindfulness, breathwork (pranayama), and body scan. The perfect start to high-performance days.</div>
           <div class="class-meta"><span>All Levels</span><span>30 min</span></div>
         </div>
       </div>
       <div class="class-card">
-        <div class="class-header"><div class="class-emoji">🤸</div><div class="class-name">Aerial Yoga</div></div>
+        <div class="class-header"><div class="class-emoji"></div><div class="class-name">Aerial Yoga</div></div>
         <div class="class-body">
           <div class="class-desc">Yoga with silk hammocks — decompresses the spine, builds core strength, and makes inversions accessible to everyone.</div>
           <div class="class-meta"><span>Beginner-friendly</span><span>75 min</span></div>
@@ -349,10 +349,10 @@
     <div class="section-title">Your First Class is <span style="color:var(--accent);">Free</span></div>
     <div class="contact-wrapper">
       <div class="contact-info">
-        <div class="contact-item"><div class="contact-icon">📍</div><div><div class="contact-label">Studio</div><div class="contact-value">ZenStrength Studio, Baner Road, Pune 411045</div></div></div>
+        <div class="contact-item"><div class="contact-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="display:inline-block;vertical-align:middle;"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="contact-label">Studio</div><div class="contact-value">ZenStrength Studio, Baner Road, Pune 411045</div></div></div>
         <div class="contact-item"><div class="contact-icon">⏰</div><div><div class="contact-label">Hours</div><div class="contact-value">Mon–Fri: 6 AM – 9 PM<br>Sat–Sun: 7 AM – 7 PM</div></div></div>
-        <div class="contact-item"><div class="contact-icon">📞</div><div><div class="contact-label">Phone</div><div class="contact-value">+91 98220 67890</div></div></div>
-        <div class="contact-item"><div class="contact-icon">✉️</div><div><div class="contact-label">Email</div><div class="contact-value">hello@zenstrengthpune.in</div></div></div>
+        <div class="contact-item"><div class="contact-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="display:inline-block;vertical-align:middle;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div><div class="contact-label">Phone</div><div class="contact-value">+91 98220 67890</div></div></div>
+        <div class="contact-item"><div class="contact-icon"></div><div><div class="contact-label">Email</div><div class="contact-value">hello@zenstrengthpune.in</div></div></div>
       </div>
       <div class="contact-form">
         <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your name"></div>
